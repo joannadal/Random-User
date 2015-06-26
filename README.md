@@ -1,2 +1,2 @@
-# Random-User
+# random-user
 Display random users information.
