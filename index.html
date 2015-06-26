@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="RandomUser">
+    <head>
+        <title>Random User</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="col-md-12 text-center m-bottom">
+            <h1 class="title">Random User</h1>
+        </div>
+
+        <div class="content" ng-controller="RandomUserController">
+
+            <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-12 m-bottom">
+                    <img src="{{ picture }}" alt="User Image" class="img-responsive img-circle img-user">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control user-input-capitalize" id="firstName" value="{{ firstName }}" placeholder="First Name" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" value="{{ username }}" placeholder="Username" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nationality" value="{{ nationality }}" placeholder="Nationality" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" value="{{ phone }}" placeholder="Phone" readonly="readonly">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control user-input-capitalize" id="lastName" value="{{ lastName }}" placeholder="Last Name" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" value="{{ email }}" placeholder="Email" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control user-input-capitalize" id="city" value="{{ city }}" placeholder="City" readonly="readonly">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="gender" value="{{ gender }}" placeholder="Gender" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <button class="btn btn-primary" id="getRandomUser" ng-click="getRandomUser()">Generate</button>
+            </div>
+
+        </div>
+
+        <script src="js/random-user.js"></script>
+
+    </body>
+
+</html>

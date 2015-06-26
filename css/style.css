@@ -1,0 +1,24 @@
+body {
+    font-family: SanFranciscoTextRegular;
+}
+
+.m-bottom {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: SanFranciscoTextHeavy;
+}
+
+.img-user {
+    margin: auto;
+    max-height: 120px;
+}
+
+.form-group input {
+    font-family: SanFranciscoTextRegular !important;
+}
+
+.user-input-capitalize {
+    text-transform: capitalize;
+}
