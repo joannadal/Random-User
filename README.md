@@ -1,2 +1,2 @@
-# Calculator-AngularJS
-Basic calculator created using AngularJS and Bootstrap.
+# Random-User
+Display random users information.
